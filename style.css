@@ -1,1 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Amatic+SC:wght@400;700&family=Trade+Winds&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior:smooth ;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.img-back{
+    width: 100%;
+    height: 100% ;
+    background-color: #cccccc;
+}
+.img-back img{
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
+.title{
+    position: absolute;
+    top: 23%;
+    left: 15%;
+}
+.title h1{
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: "Akaya Kanadaka", serif;
+    text-shadow: .4rem .5rem 2px rgba(0,0,0,.4);
+    font-weight: normal;
+    letter-spacing: .5rem;
+    margin-bottom: .4rem;
+}
+.title p{
+    font-family: "Trade Winds";
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.6);
+    letter-spacing: .2rem;
+    opacity: 0;
+    animation: movendo 5s infinite;
+}
+@keyframes movendo {
+    0% {text-indent: 150px;}
+    100%{opacity: 1;}
+}
