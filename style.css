@@ -31,19 +31,19 @@ header{
 .title{
     position: absolute;
     top: 23%;
-    left: 15%;
+    left: 12%;
 }
 .title h1{
     color: #ffffff;
     font-size: 5rem;
     font-family: "Akaya Kanadaka", serif;
-    text-shadow: .4rem .5rem 2px rgba(0,0,0,.4);
+    text-shadow: .4rem .5rem 2px rgba(0,0,0,.5);
     font-weight: normal;
     letter-spacing: .5rem;
     margin-bottom: .4rem;
 }
 .title p{
-    font-family: "Trade Winds";
+    font-family: "Trade Winds",serif;
     font-size: 1.5rem;
     color: rgba(0,0,0,.6);
     letter-spacing: .2rem;
@@ -53,4 +53,63 @@ header{
 @keyframes movendo {
     0% {text-indent: 150px;}
     100%{opacity: 1;}
+}
+.conteudo-principal{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #f8f9fa;
+}
+#segundo-titulo {
+    font-size: 3.35rem;
+    font-family: "Trade Winds",serif;
+    color: rgba(114, 183, 219);
+    text-shadow: .3rem .2rem 2px rgba(0,0,0,.4);
+    text-align: center;
+    letter-spacing: .3rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+}
+.sobre{
+    width: 100%;
+    height: 48vh;
+   /* background-color: green;*/
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    text-align: center;
+}
+.conteudo-principal h2{
+    font-size: 2.8rem;
+    font-family: "Amatic SC";
+    font-weight: 800;
+    color: rgba(0,0,0,.78);
+}
+.destino{
+    padding-right: .8rem;
+    padding-left: 6rem;
+}
+.destino p{
+    font-size: 1.4rem;
+    font-style: oblique;
+    color: #868e96;
+}
+.seguranca{
+    padding-right: .7rem;
+    padding-left: .6rem;
+}
+.seguranca p{
+    font-size: 1.4rem;
+    font-style: oblique;
+    color: #868e96;
+}
+.vacation{
+    padding-right: 1.2rem;
+    padding-left: .6rem;
+}
+.vacation p{
+    font-size: 1.4rem;
+    font-style: oblique;
+    color: #868e96;
 }
