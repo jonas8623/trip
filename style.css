@@ -60,7 +60,7 @@ header{
     position: relative;
     background-color: #f8f9fa;
 }
-#segundo-titulo {
+.segundo-titulo {
     font-size: 3.35rem;
     font-family: "Trade Winds",serif;
     color: rgba(114, 183, 219);
@@ -112,4 +112,61 @@ header{
     font-size: 1.4rem;
     font-style: oblique;
     color: #868e96;
+}
+.lugares{
+    background-color: #ffffff;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.locais{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 13rem;
+    height: 26rem;
+    padding-left: 1.65rem;
+   position: relative;
+   cursor: pointer;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+.card-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .8rem;
+    box-shadow: 0 .1rem .8rem rgba(0,0,0,.65);
+    transition: opacity .2s;
+}
+.card:hover .card-img img{
+    opacity: .9;
+}
+.card-info{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    padding: 3rem 1rem;
+    text-shadow: 0.3rem 0.5rem 0.5rem rgba(0,0,0,.8);
+    color: #eee;
+    line-height: 2rem;
+    transition:all 2s;
+}
+.card-info h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: .12rem;
+    font-size: 1.6rem;
+}
+.card-info p{
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:  #f8f9fa;
+}
+.card:hover .card-info{
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
 }
